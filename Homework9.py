@@ -18,7 +18,7 @@ pipe = pipeline("text-generation", model="TinyLlama/TinyLlama-1.1B-Chat-v1.0", t
 # Command to start biot
 @bot.message_handler(commands=['start', 'hello'])
 def send_welcome(message):
-    bot.reply_to(message, "Hey,I am your AI assistant. How are you doing?")
+    bot.reply_to(message, "Howdy, how are you doing")
 
 # Define message handler
 @bot.message_handler(func=lambda msg: True)
